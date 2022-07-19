@@ -1,0 +1,1 @@
+console.log("Goodbye Weeknd. Have fun with your chores!")
