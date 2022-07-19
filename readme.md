@@ -16,3 +16,16 @@ Create tasks for weekend chores that need to be repeated on a schedule. Create a
 - kanban / trello stye interface with 52 yearly weeks and overview of shcheduled tasks
 - archive tasks
 - toggle tasks
+
+## How to use
+
+Pending
+
+## Technologies 
+Pending
+
+## Collaborators
+Me myself and I for now
+
+## License
+MIT license
