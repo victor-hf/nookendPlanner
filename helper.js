@@ -15,7 +15,8 @@ class Chores {
         };
 
         this.choresList.push(newChore);
-        return `Added ${newChore.title}`;
+        console.log(`Added \'${newChore.title}\'`)
+        return;
     }
 
     logChores() {
