@@ -11,7 +11,7 @@ class Chores {
     const newChore = {
       title: title,
       description: description,
-      frequency: frequency,
+      frequency: frequency
     };
 
     this.choresList.push(newChore);

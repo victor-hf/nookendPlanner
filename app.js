@@ -1,11 +1,11 @@
 console.log("Say goodbye to your Weeknd! Have fun with your chores!");
 
 const utils = require("./utils.js");
-const InstanceOfChores = new utils.Chores();
+const Chores = new utils.Chores();
 
-InstanceOfChores.addChore(
+Chores.addChore(
   "Vacuum appartment",
   "Vacuum all common areas and bedroom",
   "Monthly"
 );
-InstanceOfChores.logChores();
+Chores.logChores();
