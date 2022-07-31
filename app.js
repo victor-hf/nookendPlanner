@@ -1,4 +1,4 @@
-console.log("Say goodbye to your Weeknd! \nHave fun with your chores!");
+console.log("Say goodbye to your Wknd! \nHave fun with your chores!");
 
 const utils = require("./utils.js");
 const Chores = new utils.Chores();
@@ -20,5 +20,3 @@ Chores.logChores();
 Chores.completeChore("Vacuum appartment")
 
 Chores.logChores();
-
-console.log(Chores.getChoresList())
