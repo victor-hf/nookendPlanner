@@ -8,4 +8,13 @@ Chores.addChore(
   "Vacuum all common areas and bedroom",
   "Monthly"
 );
+
+Chores.addChore(
+  "Load dishwasher",
+  "Put all dishes in dishwasher",
+  "Every 2 days"
+);
+
+Chores.addChore("Make bed", "you know", "daily");
+
 Chores.logChores();
