@@ -3,16 +3,16 @@ class Chores {
     this.choresList = [];
   }
 
-  addChore(title, description, frequency) {
+  addChore(name, description, frequency) {
     const newChore = {
-      title: title,
+      name: name,
       description: description,
       frequency: frequency,
       completed: false,
     };
 
     this.choresList.push(newChore);
-    console.log(`Added \'${newChore.title}\'`);
+    console.log(`Added \'${newChore.name}\'`);
     return;
   }
 
@@ -21,24 +21,32 @@ class Chores {
     console.log(this.choresList);
   }
 
-  completeChore(targetChoreTitle) {
+  completeChore(choreName) {
     const choreIndex = this.choresList.findIndex(
-      (chore) => chore.title === targetChoreTitle
+      (chore) => chore.name === choreName
     );
-
-    // add logic for when tasks are null and/or not found
-
-    this.choresList[choreIndex].completed = true;
-    console.log(`You completed ${this.choresList[choreIndex].title}!`)
-    logEncouragingMessage()
+    if (choreIndex === -1) {
+      console.log('No chore found under that name');
+    } else {
+      this.choresList[choreIndex].completed = true;
+      console.log(`You completed ${this.choresList[choreIndex].title}!`);
+      logEncouragingMessage();
+    }
   }
 }
 
 const logEncouragingMessage = () => {
   const messages = [
-    'There you go!', 'Keep up the good work!', 'You are one step closer to freedom!', 'You got this!', 'Go ninja, go ninja, go!', 'Another one bites the dust...', 'You are on fire!', 'That wasn\'t half bad!', 
-  ]
-  console.log(messages[Math.round(Math.random() * messages.length)])
+    'There you go!',
+    'Keep up the good work!',
+    'You are one step closer to freedom!',
+    'You got this!',
+    'Go ninja, go ninja, go!',
+    'Another one bites the dust...',
+    'You are on fire!',
+    "That wasn't half bad!",
+  ];
+  console.log(messages[Math.round(Math.random() * messages.length)]);
 };
 
 module.exports = { Chores };
