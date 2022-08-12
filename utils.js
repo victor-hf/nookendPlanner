@@ -17,8 +17,11 @@ class Chores {
   }
 
   logChores() {
-    // add logic for empty list
-    console.log(this.choresList);
+    if (this.choresList.length === 0) {
+      console.log('There are no chores on your list. \nGo have a life');
+    } else {
+      console.log(this.choresList);
+    }
   }
 
   completeChore(choreName) {
